@@ -3,13 +3,13 @@ import {Link} from 'react-router-dom'
 import moment from 'moment'
 import './ShowVideo.css'
 function ShowVideo({vid}) {
-  console.log(vid)
+  console.log(vid) 
   return (
     <>
      <Link to={`/videopage/${vid?._id}`}>
         <video 
-        //src={`http://localhost:5500/${vid.filePath}`}
-        src={`https://youtube-server-phi.vercel.app/${vid.filePath}`}
+        src={`http://localhost:5500/${vid.filePath}`}
+        //src={`https://youtube-server-phi.vercel.app/${vid.filePath}`}
         className="video_ShowVideo"
         />
      </Link>
