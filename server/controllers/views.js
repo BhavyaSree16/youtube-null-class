@@ -24,7 +24,7 @@ export const viewController = async (req, res) => {
 
     console.log(`Current points for user ${email}: ${user.points}`);
 
-    const updatedUser = await User.findByIdAndUpdate(email, { $inc: { points: 2.5 } }, { new: true });
+    const updatedUser = await User.findByIdAndUpdate(email, { $inc: { points: 5 } }, { new: true });
     if (!updatedUser) {
       console.log(`Failed to update user points for user ID: ${email}`);
       return res.status(500).send("Failed to update user points.");

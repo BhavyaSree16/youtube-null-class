@@ -8,8 +8,8 @@ function ShowVideo({vid}) {
     <>
      <Link to={`/videopage/${vid?._id}`}>
         <video 
-        src={`http://localhost:5500/${vid.filePath}`}
-        // src={`https://youtube-server-eight.vercel.app/${vid.filePath}`}
+        //src={`http://localhost:5500/${vid.filePath}`}
+        src={`https://youtube-server-phi.vercel.app/${vid.filePath}`}
         className="video_ShowVideo"
         />
      </Link>
